@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Inglés</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="logo.ico">
+</head>
+<body>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <p id="linguaLink" class="lingua-link">
+                <span class="lingua">Lingua</span><span class="link">Link</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Aprende Inglés</h1>
+        <div class="input-area">
+            <input type="text" id="englishWord" placeholder="Palabra en inglés">
+            <button id="addWordBtn">Agregar</button>
+        </div>
+        <div class="word-list">
+            <h2>Palabras Guardadas</h2>
+            <ul id="wordsList"></ul>
+        </div>
+        <div class="flashcards-overlay" id="flashcardsOverlay">
+            <div class="flashcards">
+                <h2>Repaso</h2>
+                <div id="flashcard"></div>
+                <input type="text" id="translationInput" placeholder="Traducción">
+                <div class="buttons">
+                    <button id="rememberBtn">Recordé</button>
+                    <button id="forgetBtn">Olvidé</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
