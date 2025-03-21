@@ -96,3 +96,28 @@ window.addEventListener('load', () => {
         }, 1000);
     }, 3000);
 });
+
+const introModal = document.getElementById('introModal');
+const closeIntroModal = document.getElementById('closeIntroModal');
+
+closeIntroModal.addEventListener('click', () => {
+    introModal.style.display = 'none';
+    // Aquí puedes iniciar el fade in del modal con el logo si lo deseas
+});
+
+// El modal con el logo se mostrará después de cerrar el modal de introducción
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        modal.classList.add('visible'); // Iniciar fade in del logo
+        setTimeout(() => {
+            linguaLink.classList.add('visible'); // Iniciar fade in de LinguaLink
+            setTimeout(() => {
+                logo.classList.remove('visible');
+                linguaLink.classList.remove('visible');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 1000);
+            }, 3000);
+        }, 1000);
+    }, 1000);
+});
