@@ -162,6 +162,57 @@ button {
 }
 
 /* Media Queries para dispositivos móviles */
+
+#introModal .modal-content {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2 4px 8px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 600px;
+}
+
+#introModal h2 {
+    color: #CD5C5C;
+    text-align: center;
+}
+
+#introModal button {
+    background-color: #CD5C5C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#introModal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Sombras mejoradas */
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #ddd; /* Borde más notorio */
+}
+
+
+#introModal h2 {
+    color: #CD5C5C;
+    text-align: center;
+}
+
+#introModal button {
+    background-color: #CD5C5C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 10px;
